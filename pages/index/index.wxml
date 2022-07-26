@@ -1,0 +1,28 @@
+<view class="block">
+    <view>基本使用</view>
+    <code-input autoFocus length="{{length}}"></code-input>
+</view>
+<view class="block">
+    <view>带默认值</view>
+    <code-input value="23" length="{{length}}"></code-input>
+</view>
+<view class="block">
+    <view>间隔</view>
+    <code-input length="{{length}}" spacing="20rpx"></code-input>
+</view>
+<view class="block">
+    <view>自定义宽高</view>
+    <code-input length="{{length}}" inputAreaItemWidth="100rpx" inputAreaItemHeight="60rpx"></code-input>
+</view>
+<view class="block">
+    <view>背景色</view>
+    <code-input length="{{length}}" inputAreaItemBackgroundColor="pink"></code-input>
+</view>
+<view class="block">
+    <view>点击不删除值</view>
+    <code-input value="1234" length="{{length}}" inputAreaItemTapClear="{{false}}"></code-input>
+</view>
+<view class="block">
+    <view>事件</view>
+    <code-input length="{{length}}" bind:focus="focus" bind:blur="blur" bind:input="input" bind:confirm="compelete"></code-input>
+</view>

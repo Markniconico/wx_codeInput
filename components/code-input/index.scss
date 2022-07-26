@@ -1,0 +1,64 @@
+.input_code_c {
+    padding: 10rpx 20rpx;
+    width: max-content;
+}
+
+.input_area {
+    display: flex;
+    flex-wrap: wrap;
+
+    .input_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .cursor {
+            width: 4rpx;
+            height: 35%;
+            -webkit-animation-name: show_hide;
+            animation-name: show_hide;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+            animation-timing-function: cubic-bezier(1, 0, 0, 1);
+            -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+        }
+
+        .dot {
+            width: 16rpx;
+            height: 16rpx;
+            border-radius: 50%;
+            background-color: #000;
+        }
+
+        .value {
+            font-size: 32rpx;
+            font-weight: 500;
+        }
+
+        .margin_right {
+            margin-right: 6rpx;
+        }
+
+    }
+
+}
+
+.input {
+    position: fixed;
+    bottom: 0;
+    opacity: 0 !important;
+    width: 0 !important;
+}
+
+@keyframes show_hide {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,16 @@
+<view class="input_code_c" bindtap="clickComponentsArea" style="background-color:{{backgroundColor}};">
+    <view class="input_area">
+        <view wx:for="{{inputInfo}}" wx:key="index" catchtap="clickInputBlock" data-index="{{index}}" style="margin:{{spacing}};width:{{inputAreaItemWidth}};height:{{inputAreaItemHeight}};border-radius:{{inputAreaItemRadius}};background-color:{{inputAreaItemBackgroundColor}};color:{{inputAreaItemFontColor}};" class="input_block">
+            <block wx:if="{{item.value}}">
+                <block wx:if="{{password}}">
+                    <view class="dot {{active===index?'margin_right':''}}"></view>
+                </block>
+                <block wx:else>
+                    <view class="value {{active===index?'margin_right':''}}">{{item.value}}</view>
+                </block>
+            </block>
+            <view wx:if="{{active===index && keyboard}}" class="cursor" style="background-color:{{cursorColor}};"></view>
+        </view>
+    </view>
+    <input value="{{inputValue}}" bindinput="input" bindblur="blur" focus="{{keyboard}}" cursor="{{inputValue.length}}" maxlength="{{inputInfo.length}}" class="input" type="number" hold-keyboard="{{holdKeyboard}}" adjust-position="{{true}}" />
+</view>

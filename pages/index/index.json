@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+         "code-input": "/components/code-input/index"
+    }
+}

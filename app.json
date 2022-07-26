@@ -1,0 +1,13 @@
+{
+    "pages": [
+        "pages/index/index"
+    ],
+    "usingComponents": {},
+    "window": {
+        "navigationBarBackgroundColor": "#226AFF",
+        "navigationBarTitleText": "codeInput",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#FFF"
+    },
+    "sitemapLocation": "sitemap.json"
+}
