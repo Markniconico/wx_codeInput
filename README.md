@@ -1,6 +1,9 @@
 # wx_codeInput
 微信小程序验证码输入框
 
+### 项目截图
+![image](demo.jpg)
+
 ### 一、基本使用
 - **index.json：**
 
@@ -48,7 +51,16 @@ inputAreaItemFontColor  每个输入块的文字颜色 默认#3d3d3d
 
 cursorColor     光标颜色 默认#3d3d3d
 ```
-### 三、this.selectComponent(String selector)
+
+### 三、Events
+```text
+bind:focus      聚焦事件 event.detail
+bind:blur      失焦事件 event.detail
+bind:compelete       输入完成 event.detail
+bind:input      输入事件 event.detail
+```
+
+### 四、this.selectComponent(String selector)
 - **index.wxml：**
 ```text
 <!--wxml-->
