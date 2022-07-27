@@ -12,5 +12,5 @@
             <view wx:if="{{active===index && keyboard}}" class="cursor" style="background-color:{{cursorColor}};"></view>
         </view>
     </view>
-    <input value="{{inputValue}}" bindinput="input" bindblur="blur" focus="{{keyboard}}" cursor="{{inputValue.length}}" maxlength="{{inputInfo.length}}" class="input" type="number" hold-keyboard="{{holdKeyboard}}" adjust-position="{{true}}" />
+    <input value="{{inputValue}}" bindinput="input" bindblur="blur" focus="{{keyboard}}" cursor="{{inputValue.length}}" maxlength="{{inputInfo.length}}" class="input" type="number" hold-keyboard="{{holdKeyboard}}" adjust-position="{{adjustPosition}}" />
 </view>
